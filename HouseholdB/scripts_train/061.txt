@@ -1,0 +1,2388 @@
+wake_up (06:00 - 06:10) 
+playing_music (06:10 - 06:32) 
+cleaning (06:32 - 06:49) 
+brushing_teeth (06:49 - 06:52) 
+reading (06:52 - 07:08) 
+going_to_the_bathroom (07:28 - 07:31) 
+breakfast (08:31 - 08:58) 
+wash_dishes_breakfast (08:58 - 09:08) 
+computer_work (09:28 - 10:00) 
+playing_music (11:10 - 11:32) 
+reading (11:42 - 11:58) 
+socializing (12:38 - 13:51) 
+showering (15:11 - 15:29) 
+watching_tv (15:39 - 16:39) 
+dinner (18:09 - 18:53) 
+wash_dishes_dinner (19:03 - 20:00) 
+watching_tv (20:10 - 21:10) 
+brushing_teeth (21:10 - 21:13) 
+sleep (23:03 - 1day - 03:03) 
+
+
+### wake_up-00.txt
+
+[WALK] <bedroom> (162) [1]
+370.0
+## Wakeup until 06:10
+
+
+### playing_music-02b.txt
+
+[WALK] <home_office> (241) [1]
+371.0
+## Play Guitar until 06:11
+
+[FIND] <instrument_guitar> (1126) [2]
+372.0
+## Play Guitar until 06:12
+
+[GRAB] <instrument_guitar> (1126) [3]
+373.0
+[WALK] <chair> (194) [4]
+374.0
+[PUTBACK] <instrument_guitar> (1126) <chair> (194) [5]
+375.0
+<<Graph Changes>>
+   - instrument_guitar INSIDE home_office
+   + instrument_guitar ON chair
+   + instrument_guitar INSIDE bedroom
+
+375.0: instrument_guitar moved
+## Play Guitar until 06:15
+
+[WALK] <chair> (194) [6]
+378.75
+## Play Guitar until 06:19
+
+[FIND] <instrument_guitar> (1126) [7]
+382.5
+## Play Guitar until 06:22
+
+[GRAB] <instrument_guitar> (1126) [8]
+386.25
+[PUTBACK] <instrument_guitar> (1126) <chair> (194) [9]
+390.0
+## Play Guitar until 06:30
+
+[WALK] <chair> (194) [10]
+390.4
+## Play Guitar until 06:30
+
+[FIND] <instrument_guitar> (1126) [11]
+390.79999999999995
+## Play Guitar until 06:31
+
+[GRAB] <instrument_guitar> (1126) [12]
+391.19999999999993
+[WALK] <home_office> (241) [13]
+391.5999999999999
+[PUTBACK] <instrument_guitar> (1126) <home_office> (241) [14]
+391.9999999999999
+<<Graph Changes>>
+   - instrument_guitar ON chair
+   - instrument_guitar INSIDE bedroom
+   + instrument_guitar ON home_office
+   + instrument_guitar INSIDE home_office
+
+391.9999999999999: instrument_guitar moved
+## Play Guitar until 06:32
+
+
+### cleaning-08.txt
+
+[WALK] <dining_room> (41) [1]
+392.0833333333332
+## Clean kitchen cabinets until 06:32
+
+[WALK] <kitchen_cabinet> (1004) [2]
+392.1666666666665
+## Clean kitchen cabinets until 06:32
+
+[OPEN] <kitchen_cabinet> (1004) [3]
+392.24999999999983
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['CLEAN', 'CLOSED']->['OPEN', 'CLEAN']
+
+## Clean kitchen cabinets until 06:32
+
+[FIND] <washcloth> (1212) [4]
+392.33333333333314
+## Clean kitchen cabinets until 06:32
+
+[GRAB] <washcloth> (1212) [5]
+392.41666666666646
+[FIND] <cleaning_solution> (1036) [6]
+392.4999999999998
+[GRAB] <cleaning_solution> (1036) [7]
+392.5833333333331
+[WALK] <kitchen_counter> (119) [8]
+392.6666666666664
+[PUTBACK] <washcloth> (1212) <kitchen_counter> (119) [9]
+392.7499999999997
+[PUTBACK] <cleaning_solution> (1036) <kitchen_counter> (119) [10]
+392.83333333333303
+<<Graph Changes>>
+   - washcloth INSIDE kitchen_cabinet
+   - cleaning_solution INSIDE kitchen_cabinet
+   + cleaning_solution ON kitchen_counter
+   + washcloth ON kitchen_counter
+
+392.83333333333303: cleaning_solution,washcloth moved
+392.83333333333303: cleaning_solution,washcloth moved_under_sensor
+## Clean kitchen cabinets until 06:33
+
+[WALK] <kitchen_cabinet> (1004) [11]
+392.91666666666634
+## Clean kitchen cabinets until 06:33
+
+[CLOSE] <kitchen_cabinet> (1004) [12]
+392.99999999999966
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Clean kitchen cabinets until 06:33
+
+[WALK] <kitchen_counter> (119) [13]
+394.36363636363603
+## Clean kitchen cabinets until 06:34
+
+[GRAB] <washcloth> (1212) [14]
+395.7272727272724
+[GRAB] <cleaning_solution> (1036) [15]
+397.0909090909088
+[WALK] <cupboard> (117) [16]
+398.45454545454515
+[SCRUB] <cupboard> (117) [17]
+399.81818181818153
+[WALK] <kitchen_cabinet> (1004) [18]
+401.1818181818179
+[SCRUB] <kitchen_cabinet> (1004) [19]
+402.5454545454543
+[WALK] <kitchen_counter> (119) [20]
+403.90909090909065
+[SCRUB] <kitchen_counter> (119) [21]
+405.272727272727
+[PUTBACK] <washcloth> (1212) <kitchen_counter> (119) [22]
+406.6363636363634
+[PUTBACK] <cleaning_solution> (1036) <kitchen_counter> (119) [23]
+407.9999999999998
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['CLOSED', 'CLEAN']->['CLEAN', 'CLOSED']
+   (s)117cupboard['CLOSED']->['CLEAN', 'CLOSED']
+   (s)119kitchen_counter[]->['CLEAN']
+
+## Clean kitchen cabinets until 06:48
+
+[WALK] <dining_room> (41) [24]
+408.09090909090884
+## Clean kitchen cabinets until 06:48
+
+[WALK] <kitchen_cabinet> (1004) [25]
+408.1818181818179
+## Clean kitchen cabinets until 06:48
+
+[OPEN] <kitchen_cabinet> (1004) [26]
+408.27272727272697
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['CLEAN', 'CLOSED']->['OPEN', 'CLEAN']
+
+## Clean kitchen cabinets until 06:48
+
+[FIND] <washcloth> (1212) [27]
+408.36363636363603
+## Clean kitchen cabinets until 06:48
+
+[GRAB] <washcloth> (1212) [28]
+408.4545454545451
+[FIND] <cleaning_solution> (1036) [29]
+408.54545454545416
+[GRAB] <cleaning_solution> (1036) [30]
+408.6363636363632
+[WALK] <kitchen_cabinet> (1004) [31]
+408.7272727272723
+[PUTIN] <washcloth> (1212) <kitchen_cabinet> (1004) [32]
+408.81818181818136
+[PUTIN] <cleaning_solution> (1036) <kitchen_cabinet> (1004) [33]
+408.9090909090904
+<<Graph Changes>>
+   - cleaning_solution ON kitchen_counter
+   - washcloth ON kitchen_counter
+   + washcloth INSIDE kitchen_cabinet
+   + cleaning_solution INSIDE kitchen_cabinet
+
+408.9090909090904: cleaning_solution,washcloth moved
+408.9090909090904: cleaning_solution,washcloth moved_under_sensor
+## Clean kitchen cabinets until 06:49
+
+[CLOSE] <kitchen_cabinet> (1004) [34]
+408.9999999999995
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Clean kitchen cabinets until 06:49
+
+
+### brushing_teeth-07.txt
+
+[WALK] <bathroom> (1) [1]
+409.2499999999995
+## Brush teeth until 06:49
+
+[WALK] <toothbrush> (1204) [2]
+409.4999999999995
+## Brush teeth until 06:49
+
+[FIND] <toothbrush> (1204) [3]
+409.7499999999995
+## Brush teeth until 06:50
+
+[GRAB] <toothbrush> (1204) [4]
+409.9999999999995
+[WALK] <bathroom_cabinet> (17) [5]
+409.9999999999995
+[FIND] <bathroom_cabinet> (17) [6]
+409.9999999999995
+[OPEN] <bathroom_cabinet> (17) [7]
+409.9999999999995
+[FIND] <tooth_paste> (1203) [8]
+409.9999999999995
+[GRAB] <tooth_paste> (1203) [9]
+409.9999999999995
+[FIND] <bathroom_cabinet> (17) [10]
+409.9999999999995
+[CLOSE] <bathroom_cabinet> (17) [11]
+409.9999999999995
+[POUR] <tooth_paste> (1203) <toothbrush> (1204) [12]
+409.9999999999995
+[FIND] <bathroom_counter> (18) [13]
+409.9999999999995
+[PUTBACK] <tooth_paste> (1203) <bathroom_counter> (18) [14]
+409.9999999999995
+[WALK] <faucet> (20) [15]
+410.4999999999995
+[SWITCHON] <faucet> (20) [16]
+410.9999999999995
+[RINSE] <toothbrush> (1204) [17]
+411.4999999999995
+[SWITCHOFF] <faucet> (20) [18]
+411.9999999999995
+[WASH] <toothbrush> (1204) [19]
+411.9999999999995
+[WALK] <toothbrush_holder> (1012) [20]
+411.9999999999995
+[FIND] <toothbrush_holder> (1012) [21]
+411.9999999999995
+[PUTBACK] <toothbrush> (1204) <toothbrush_holder> (1012) [22]
+411.9999999999995
+<<Graph Changes>>
+   - toothbrush ON bathroom_counter
+   - tooth_paste ON toothbrush_holder
+
+## Brush teeth until 06:52
+
+[FIND] <tooth_paste> (1203) [23]
+411.9999999999995
+## Brush teeth until 06:52
+
+[GRAB] <tooth_paste> (1203) [24]
+411.9999999999995
+[FIND] <bathroom_cabinet> (17) [25]
+411.9999999999995
+[OPEN] <bathroom_cabinet> (17) [26]
+411.9999999999995
+[PUTIN] <tooth_paste> (1203) <bathroom_cabinet> (17) [27]
+411.9999999999995
+<<Graph Changes>>
+   (s)17bathroom_cabinet['CLOSED']->['OPEN']
+   - tooth_paste ON bathroom_counter
+   + tooth_paste INSIDE bathroom_cabinet
+
+411.9999999999995: tooth_paste moved
+411.9999999999995: tooth_paste moved_under_sensor
+## Brush teeth until 06:52
+
+[CLOSE] <bathroom_cabinet> (17) [28]
+411.9999999999995
+<<Graph Changes>>
+   (s)17bathroom_cabinet['OPEN']->['CLOSED']
+
+## Brush teeth until 06:52
+
+
+### reading-00a.txt
+
+[WALK] <bedroom> (162) [1]
+412.1666666666662
+## Get Book until 06:52
+
+[WALK] <bookshelf> (196) [2]
+412.33333333333286
+## Get Book until 06:52
+
+[FIND] <book> (1023) [3]
+412.49999999999955
+## Get Book until 06:52
+
+[GRAB] <book> (1023) [4]
+412.66666666666623
+[WALK] <sofa> (198) [5]
+412.8333333333329
+[PUTBACK] <book> (1023) <sofa> (198) [6]
+412.9999999999996
+<<Graph Changes>>
+   - book INSIDE bookshelf
+   + book ON sofa
+
+412.9999999999996: book moved
+## Get Book until 06:53
+
+[WALK] <sofa> (198) [7]
+413.2499999999996
+## Read until 06:53
+
+[FIND] <book> (1023) [8]
+413.4999999999996
+## Read until 06:53
+
+[GRAB] <book> (1023) [9]
+413.7499999999996
+[SIT] <sofa> (198) [10]
+413.9999999999996
+[READ] <book> (1023) [11]
+423.9999999999996
+[PUTBACK] <book> (1023) <sofa> (198) [12]
+424.4999999999996
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Read until 07:04
+
+[STANDUP] [13]
+424.9999999999996
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Read until 07:05
+
+[WALK] <sofa> (198) [14]
+425.4999999999996
+## Putaway Book until 07:05
+
+[FIND] <book> (1023) [15]
+425.9999999999996
+## Putaway Book until 07:06
+
+[GRAB] <book> (1023) [16]
+426.4999999999996
+[WALK] <bedroom> (162) [17]
+426.9999999999996
+[WALK] <bookshelf> (196) [18]
+427.4999999999996
+[PUTBACK] <book> (1023) <bookshelf> (196) [19]
+427.9999999999996
+<<Graph Changes>>
+   - book ON sofa
+   + book ON bookshelf
+
+427.9999999999996: book moved
+## Putaway Book until 07:08
+
+
+### going_to_the_bathroom-00.txt
+<<Activity Change>>
+## Idle until 07:28
+
+[WALK] <bathroom> (1) [1]
+447.9999999999996
+## Use bathroom until 07:28
+
+[FIND] <light> (39) [2]
+447.9999999999996
+## Use bathroom until 07:28
+
+[SWITCHON] <light> (39) [3]
+447.9999999999996
+<<Graph Changes>>
+   (s)39light['OFF']->['ON']
+
+## Use bathroom until 07:28
+
+[FIND] <toilet> (15) [4]
+448.3333333333329
+## Use bathroom until 07:28
+
+[SIT] <toilet> (15) [5]
+448.66666666666623
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Use bathroom until 07:29
+
+[STANDUP] [6]
+448.99999999999955
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Use bathroom until 07:29
+
+[FIND] <sink> (19) [7]
+449.2857142857138
+## Use bathroom until 07:29
+
+[FIND] <faucet> (20) [8]
+449.5714285714281
+## Use bathroom until 07:30
+
+[SWITCHON] <faucet> (20) [9]
+449.8571428571424
+<<Graph Changes>>
+   (s)20faucet['OFF']->['ON']
+
+## Use bathroom until 07:30
+
+[FIND] <faucet> (20) [10]
+450.14285714285666
+## Use bathroom until 07:30
+
+[SWITCHOFF] <faucet> (20) [11]
+450.42857142857093
+<<Graph Changes>>
+   (s)20faucet['ON']->['OFF']
+
+## Use bathroom until 07:30
+
+[FIND] <light> (39) [12]
+450.7142857142852
+## Use bathroom until 07:31
+
+[SWITCHOFF] <light> (39) [13]
+450.9999999999995
+<<Graph Changes>>
+   (s)39light['ON']->['OFF']
+
+## Use bathroom until 07:31
+
+
+### breakfast-00a.txt
+<<Activity Change>>
+## Idle until 08:31
+
+[WALK] <dining_room> (41) [1]
+511.2222222222217
+## Prepare Cereal until 08:31
+
+[WALK] <cupboard> (117) [2]
+511.44444444444395
+## Prepare Cereal until 08:31
+
+[OPEN] <cupboard> (117) [3]
+511.6666666666662
+<<Graph Changes>>
+   (s)117cupboard['CLEAN', 'CLOSED']->['OPEN', 'CLEAN']
+
+## Prepare Cereal until 08:32
+
+[FIND] <bowl> (1026) [4]
+511.8888888888884
+## Prepare Cereal until 08:32
+
+[GRAB] <bowl> (1026) [5]
+512.1111111111106
+[FIND] <cupboard> (117) [6]
+512.3333333333328
+[CLOSE] <cupboard> (117) [7]
+512.555555555555
+[WALK] <table> (114) [8]
+512.7777777777771
+[PUTBACK] <bowl> (1026) <table> (114) [9]
+512.9999999999993
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+   - bowl INSIDE cupboard
+   + bowl ON table
+
+512.9999999999993: bowl moved
+512.9999999999993: bowl moved_under_sensor
+## Prepare Cereal until 08:33
+
+[FIND] <food_cereal> (1087) [10]
+513.3333333333327
+## Prepare Cereal until 08:33
+
+[FIND] <cupboard> (117) [11]
+513.6666666666661
+## Prepare Cereal until 08:34
+
+[OPEN] <cupboard> (117) [12]
+513.9999999999994
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Prepare Cereal until 08:34
+
+[GRAB] <food_cereal> (1087) [13]
+514.3333333333328
+[CLOSE] <cupboard> (117) [14]
+514.6666666666662
+[WALK] <table> (114) [15]
+514.9999999999995
+[FIND] <bowl> (1026) [16]
+515.3333333333329
+[POUR] <food_cereal> (1087) <bowl> (1026) [17]
+515.6666666666663
+[PUTBACK] <food_cereal> (1087) <table> (114) [18]
+515.9999999999997
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+   - food_cereal INSIDE cupboard
+   + food_cereal ON table
+
+515.9999999999997: food_cereal moved
+515.9999999999997: food_cereal moved_under_sensor
+## Prepare Cereal until 08:36
+
+[WALK] <fridge> (1006) [19]
+516.333333333333
+## Prepare Cereal until 08:36
+
+[OPEN] <fridge> (1006) [20]
+516.6666666666664
+<<Graph Changes>>
+   (s)1006fridge['OFF', 'CLEAN', 'CLOSED']->['OPEN', 'OFF', 'CLEAN']
+
+## Prepare Cereal until 08:37
+
+[FIND] <milk> (1144) [21]
+516.9999999999998
+## Prepare Cereal until 08:37
+
+[GRAB] <milk> (1144) [22]
+517.3333333333331
+[CLOSE] <fridge> (1006) [23]
+517.6666666666665
+[WALK] <table> (114) [24]
+517.9999999999999
+[FIND] <bowl> (1026) [25]
+518.3333333333333
+[POUR] <milk> (1144) <bowl> (1026) [26]
+518.6666666666666
+[PUTBACK] <milk> (1144) <table> (114) [27]
+519.0
+<<Graph Changes>>
+   (s)1006fridge['OPEN', 'OFF', 'CLEAN']->['CLOSED', 'OFF', 'CLEAN']
+   - milk INSIDE fridge
+   + milk ON table
+
+519.0: milk moved
+519.0: milk moved_under_sensor
+## Prepare Cereal until 08:39
+
+[WALK] <cupboard> (117) [28]
+519.375
+## Prepare Cereal until 08:39
+
+[OPEN] <cupboard> (117) [29]
+519.75
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Prepare Cereal until 08:40
+
+[FIND] <spoon> (1193) [30]
+520.125
+## Prepare Cereal until 08:40
+
+[GRAB] <spoon> (1193) [31]
+520.5
+[CLOSE] <cupboard> (117) [32]
+520.875
+[WALK] <table> (114) [33]
+521.25
+[FIND] <bowl> (1026) [34]
+521.625
+[PUTBACK] <spoon> (1193) <bowl> (1026) [35]
+522.0
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+   - spoon INSIDE cupboard
+   + spoon ON bowl
+
+522.0: spoon moved
+522.0: spoon moved_under_sensor
+## Prepare Cereal until 08:42
+
+[WALK] <table> (114) [36]
+524.6666666666666
+## Eat Cereal until 08:45
+
+[FIND] <food_cereal> (1087) [37]
+527.3333333333333
+## Eat Cereal until 08:47
+
+[EAT] <food_cereal> (1087) [38]
+529.9999999999999
+## Eat Cereal until 08:50
+
+[FIND] <food_cereal> (1087) [39]
+530.3333333333333
+## Putaway Cereal until 08:50
+
+[GRAB] <food_cereal> (1087) [40]
+530.6666666666666
+[WALK] <cupboard> (117) [41]
+531.0
+[OPEN] <cupboard> (117) [42]
+531.3333333333334
+[PUTIN] <food_cereal> (1087) <cupboard> (117) [43]
+531.6666666666667
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+   - food_cereal ON table
+   + food_cereal INSIDE cupboard
+
+531.6666666666667: food_cereal moved
+531.6666666666667: food_cereal moved_under_sensor
+## Putaway Cereal until 08:52
+
+[CLOSE] <cupboard> (117) [44]
+532.0000000000001
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Putaway Cereal until 08:52
+
+[FIND] <milk> (1144) [45]
+532.3333333333335
+## Putaway Cereal until 08:52
+
+[GRAB] <milk> (1144) [46]
+532.6666666666669
+[WALK] <fridge> (1006) [47]
+533.0000000000002
+[OPEN] <fridge> (1006) [48]
+533.3333333333336
+[PUTIN] <milk> (1144) <fridge> (1006) [49]
+533.666666666667
+<<Graph Changes>>
+   (s)1006fridge['CLOSED', 'OFF', 'CLEAN']->['OPEN', 'OFF', 'CLEAN']
+   - milk ON table
+   + milk INSIDE fridge
+
+533.666666666667: milk moved
+533.666666666667: milk moved_under_sensor
+## Putaway Cereal until 08:54
+
+[CLOSE] <fridge> (1006) [50]
+534.0000000000003
+<<Graph Changes>>
+   (s)1006fridge['OPEN', 'OFF', 'CLEAN']->['CLOSED', 'OFF', 'CLEAN']
+
+## Putaway Cereal until 08:54
+
+[WALK] <table> (114) [51]
+534.4444444444448
+## Putaway Cereal until 08:54
+
+[FIND] <bowl> (1026) [52]
+534.8888888888893
+## Putaway Cereal until 08:55
+
+[GRAB] <bowl> (1026) [53]
+535.3333333333337
+[WALK] <sink> (120) [54]
+535.7777777777782
+[PUTBACK] <bowl> (1026) <sink> (120) [55]
+536.2222222222226
+<<Graph Changes>>
+   - bowl ON table
+   + bowl ON sink
+
+536.2222222222226: bowl moved
+## Putaway Cereal until 08:56
+
+[WALK] <table> (114) [56]
+536.6666666666671
+## Putaway Cereal until 08:57
+
+[FIND] <spoon> (1193) [57]
+537.1111111111115
+## Putaway Cereal until 08:57
+
+[GRAB] <spoon> (1193) [58]
+537.555555555556
+[PUTBACK] <spoon> (1193) <sink> (120) [59]
+538.0000000000005
+<<Graph Changes>>
+   - spoon ON bowl
+   + spoon ON sink
+
+538.0000000000005: spoon moved
+## Putaway Cereal until 08:58
+
+
+### wash_dishes_breakfast-00a.txt
+
+[WALK] <sink> (120) [1]
+538.7142857142861
+## Wash Bowl and Spoon until 08:59
+
+[FIND] <bowl> (1026) [2]
+539.4285714285718
+## Wash Bowl and Spoon until 08:59
+
+[GRAB] <bowl> (1026) [3]
+540.1428571428575
+[WASH] <bowl> (1026) [4]
+540.8571428571431
+[WALK] <cupboard> (117) [5]
+541.5714285714288
+[OPEN] <cupboard> (117) [6]
+542.2857142857144
+[PUTIN] <bowl> (1026) <cupboard> (117) [7]
+543.0000000000001
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+   - bowl ON sink
+   + bowl INSIDE cupboard
+
+543.0000000000001: bowl moved
+543.0000000000001: bowl moved_under_sensor
+## Wash Bowl and Spoon until 09:03
+
+[WALK] <sink> (120) [8]
+543.7142857142858
+## Wash Bowl and Spoon until 09:04
+
+[FIND] <spoon> (1193) [9]
+544.4285714285714
+## Wash Bowl and Spoon until 09:04
+
+[GRAB] <spoon> (1193) [10]
+545.1428571428571
+[WASH] <spoon> (1193) [11]
+545.8571428571428
+[WALK] <cupboard> (117) [12]
+546.5714285714284
+[PUTIN] <spoon> (1193) <cupboard> (117) [13]
+547.2857142857141
+<<Graph Changes>>
+   - spoon ON sink
+   + spoon INSIDE cupboard
+
+547.2857142857141: spoon moved
+547.2857142857141: spoon moved_under_sensor
+## Wash Bowl and Spoon until 09:07
+
+[CLOSE] <cupboard> (117) [14]
+547.9999999999998
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Wash Bowl and Spoon until 09:08
+
+
+### computer_work-04b.txt
+<<Activity Change>>
+## Idle until 09:28
+
+[FIND] <chair> (271) [1]
+572.9999999999998
+## Desk work until 09:33
+
+[SIT] <chair> (271) [2]
+577.9999999999998
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Desk work until 09:38
+
+[STANDUP] [3]
+582.9999999999998
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Desk work until 09:43
+
+[WALK] <bedroom> (162) [4]
+583.1111111111109
+## Desk work until 09:43
+
+[FIND] <filing_cabinet> (200) [5]
+583.222222222222
+## Desk work until 09:43
+
+[OPEN] <filing_cabinet> (200) [6]
+583.333333333333
+<<Graph Changes>>
+   (s)200filing_cabinet['CLOSED']->['OPEN']
+
+## Desk work until 09:43
+
+[FIND] <headset> (1123) [7]
+583.4444444444441
+## Desk work until 09:43
+
+[GRAB] <headset> (1123) [8]
+583.5555555555552
+[FIND] <filing_cabinet> (200) [9]
+583.6666666666663
+[CLOSE] <filing_cabinet> (200) [10]
+583.7777777777774
+[FIND] <desk> (272) [11]
+583.8888888888885
+[PUTBACK] <headset> (1123) <desk> (272) [12]
+583.9999999999995
+<<Graph Changes>>
+   (s)200filing_cabinet['OPEN']->['CLOSED']
+   - headset INSIDE filing_cabinet
+   + headset ON desk
+
+583.9999999999995: headset moved
+## Desk work until 09:44
+
+[FIND] <chair> (271) [13]
+588.9999999999995
+## Desk work until 09:49
+
+[SIT] <chair> (271) [14]
+593.9999999999995
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Desk work until 09:54
+
+[STANDUP] [15]
+598.9999999999995
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Desk work until 09:59
+
+[FIND] <desk> (272) [16]
+599.1249999999995
+## Desk work until 09:59
+
+[FIND] <headset> (1123) [17]
+599.2499999999995
+## Desk work until 09:59
+
+[GRAB] <headset> (1123) [18]
+599.3749999999995
+[FIND] <filing_cabinet> (200) [19]
+599.4999999999995
+[OPEN] <filing_cabinet> (200) [20]
+599.6249999999995
+[PUTIN] <headset> (1123) <filing_cabinet> (200) [21]
+599.7499999999995
+<<Graph Changes>>
+   (s)200filing_cabinet['CLOSED']->['OPEN']
+   - headset ON desk
+   + headset INSIDE filing_cabinet
+
+599.7499999999995: headset moved
+## Desk work until 10:00
+
+[FIND] <filing_cabinet> (200) [22]
+599.8749999999995
+## Desk work until 10:00
+
+[CLOSE] <filing_cabinet> (200) [23]
+599.9999999999995
+<<Graph Changes>>
+   (s)200filing_cabinet['OPEN']->['CLOSED']
+
+## Desk work until 10:00
+
+
+### playing_music-02a.txt
+<<Activity Change>>
+## Idle until 11:10
+
+[WALK] <home_office> (241) [1]
+670.9999999999995
+## Play Guitar until 11:11
+
+[FIND] <instrument_guitar> (1126) [2]
+671.9999999999995
+## Play Guitar until 11:12
+
+[GRAB] <instrument_guitar> (1126) [3]
+672.9999999999995
+[WALK] <chair> (271) [4]
+673.9999999999995
+[PUTBACK] <instrument_guitar> (1126) <chair> (271) [5]
+674.9999999999995
+<<Graph Changes>>
+   - instrument_guitar ON home_office
+   + instrument_guitar ON chair
+
+674.9999999999995: instrument_guitar moved
+## Play Guitar until 11:15
+
+[WALK] <chair> (271) [6]
+678.7499999999995
+## Play Guitar until 11:19
+
+[FIND] <instrument_guitar> (1126) [7]
+682.4999999999995
+## Play Guitar until 11:22
+
+[GRAB] <instrument_guitar> (1126) [8]
+686.2499999999995
+[PUTBACK] <instrument_guitar> (1126) <chair> (271) [9]
+689.9999999999995
+## Play Guitar until 11:30
+
+[WALK] <chair> (271) [10]
+690.3999999999995
+## Play Guitar until 11:30
+
+[FIND] <instrument_guitar> (1126) [11]
+690.7999999999995
+## Play Guitar until 11:31
+
+[GRAB] <instrument_guitar> (1126) [12]
+691.1999999999995
+[WALK] <home_office> (241) [13]
+691.5999999999995
+[PUTBACK] <instrument_guitar> (1126) <home_office> (241) [14]
+691.9999999999994
+<<Graph Changes>>
+   - instrument_guitar ON chair
+   + instrument_guitar ON home_office
+
+691.9999999999994: instrument_guitar moved
+## Play Guitar until 11:32
+
+
+### reading-00a.txt
+<<Activity Change>>
+## Idle until 11:42
+
+[WALK] <bedroom> (162) [1]
+702.1666666666661
+## Get Book until 11:42
+
+[WALK] <bookshelf> (196) [2]
+702.3333333333327
+## Get Book until 11:42
+
+[FIND] <book> (1023) [3]
+702.4999999999993
+## Get Book until 11:42
+
+[GRAB] <book> (1023) [4]
+702.666666666666
+[WALK] <sofa> (198) [5]
+702.8333333333326
+[PUTBACK] <book> (1023) <sofa> (198) [6]
+702.9999999999992
+<<Graph Changes>>
+   - book ON bookshelf
+   + book ON sofa
+
+702.9999999999992: book moved
+## Get Book until 11:43
+
+[WALK] <sofa> (198) [7]
+703.2499999999992
+## Read until 11:43
+
+[FIND] <book> (1023) [8]
+703.4999999999992
+## Read until 11:43
+
+[GRAB] <book> (1023) [9]
+703.7499999999992
+[SIT] <sofa> (198) [10]
+703.9999999999992
+[READ] <book> (1023) [11]
+713.9999999999992
+[PUTBACK] <book> (1023) <sofa> (198) [12]
+714.4999999999992
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Read until 11:54
+
+[STANDUP] [13]
+714.9999999999992
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Read until 11:55
+
+[WALK] <sofa> (198) [14]
+715.4999999999992
+## Putaway Book until 11:55
+
+[FIND] <book> (1023) [15]
+715.9999999999992
+## Putaway Book until 11:56
+
+[GRAB] <book> (1023) [16]
+716.4999999999992
+[WALK] <bedroom> (162) [17]
+716.9999999999992
+[WALK] <bookshelf> (196) [18]
+717.4999999999992
+[PUTBACK] <book> (1023) <bookshelf> (196) [19]
+717.9999999999992
+<<Graph Changes>>
+   - book ON sofa
+   + book ON bookshelf
+
+717.9999999999992: book moved
+## Putaway Book until 11:58
+
+
+### socializing-00c.txt
+<<Activity Change>>
+## Idle until 12:38
+
+[WALK] <dining_room> (41) [1]
+760.4999999999992
+## Greet friends until 12:40
+
+[WALK] <bench> (113) [2]
+762.9999999999992
+## Greet friends until 12:43
+
+[SIT] <bench> (113) [3]
+765.4999999999992
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Greet friends until 12:45
+
+[STANDUP] [4]
+767.9999999999992
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Greet friends until 12:48
+
+[FIND] <chessboard> (1034) [5]
+768.3749999999992
+## Prepare games until 12:48
+
+[GRAB] <chessboard> (1034) [6]
+768.7499999999992
+[WALK] <table> (114) [7]
+769.1249999999992
+[PUTBACK] <chessboard> (1034) <table> (114) [8]
+769.4999999999992
+<<Graph Changes>>
+   - chessboard INSIDE home_office
+   - chessboard INSIDE bookshelf
+   + chessboard INSIDE dining_room
+   + chessboard ON table
+
+769.4999999999992: chessboard moved
+## Prepare games until 12:49
+
+[FIND] <deck_of_cards> (1060) [9]
+769.8749999999992
+## Prepare games until 12:50
+
+[GRAB] <deck_of_cards> (1060) [10]
+770.2499999999992
+[WALK] <table> (114) [11]
+770.6249999999992
+[PUTBACK] <deck_of_cards> (1060) <table> (114) [12]
+770.9999999999992
+<<Graph Changes>>
+   - deck_of_cards INSIDE home_office
+   - deck_of_cards INSIDE bookshelf
+   + deck_of_cards ON table
+   + deck_of_cards INSIDE dining_room
+
+770.9999999999992: deck_of_cards moved
+## Prepare games until 12:51
+
+[WALK] <dining_room> (41) [13]
+771.5555555555547
+## Prepare tea until 12:52
+
+[WALK] <cupboard> (117) [14]
+772.1111111111103
+## Prepare tea until 12:52
+
+[OPEN] <cupboard> (117) [15]
+772.6666666666658
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Prepare tea until 12:53
+
+[FIND] <tea> (1196) [16]
+773.2222222222214
+## Prepare tea until 12:53
+
+[GRAB] <tea> (1196) [17]
+773.7777777777769
+[WALK] <table> (114) [18]
+774.3333333333325
+[PUTBACK] <tea> (1196) <table> (114) [19]
+774.888888888888
+<<Graph Changes>>
+   - tea INSIDE cupboard
+   + tea ON table
+
+774.888888888888: tea moved
+774.888888888888: tea moved_under_sensor
+## Prepare tea until 12:55
+
+[WALK] <cupboard> (117) [20]
+775.4444444444435
+## Prepare tea until 12:55
+
+[CLOSE] <cupboard> (117) [21]
+775.9999999999991
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Prepare tea until 12:56
+
+[WALK] <dining_room> (41) [22]
+776.5555555555546
+## Prepare tea until 12:57
+
+[WALK] <cupboard> (117) [23]
+777.1111111111102
+## Prepare tea until 12:57
+
+[OPEN] <cupboard> (117) [24]
+777.6666666666657
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Prepare tea until 12:58
+
+[FIND] <cup> (1058) [25]
+778.2222222222213
+## Prepare tea until 12:58
+
+[GRAB] <cup> (1058) [26]
+778.7777777777768
+[WALK] <table> (114) [27]
+779.3333333333323
+[PUTBACK] <cup> (1058) <table> (114) [28]
+779.8888888888879
+<<Graph Changes>>
+   - cup INSIDE cupboard
+   + cup ON table
+
+779.8888888888879: cup moved
+779.8888888888879: cup moved_under_sensor
+## Prepare tea until 13:00
+
+[WALK] <cupboard> (117) [29]
+780.4444444444434
+## Prepare tea until 13:00
+
+[CLOSE] <cupboard> (117) [30]
+780.999999999999
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Prepare tea until 13:01
+
+[WALK] <dining_room> (41) [31]
+788.499999999999
+## Socialize until 13:08
+
+[WALK] <bench> (113) [32]
+795.999999999999
+## Socialize until 13:16
+
+[SIT] <bench> (113) [33]
+803.499999999999
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Socialize until 13:23
+
+[STANDUP] [34]
+810.999999999999
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Socialize until 13:31
+
+[WALK] <table> (114) [35]
+812.6666666666656
+## Cleanup until 13:33
+
+[WALK] <cup> (1058) [36]
+814.3333333333322
+## Cleanup until 13:34
+
+[GRAB] <cup> (1058) [37]
+815.9999999999989
+[WALK] <sink> (120) [38]
+817.6666666666655
+[RINSE] <cup> (1058) [39]
+819.3333333333321
+[PUTBACK] <cup> (1058) <sink> (120) [40]
+820.9999999999987
+<<Graph Changes>>
+   - cup ON table
+   + cup ON sink
+
+820.9999999999987: cup moved
+## Cleanup until 13:41
+
+[WALK] <cupboard> (117) [41]
+821.3749999999987
+## Cleanup until 13:41
+
+[OPEN] <cupboard> (117) [42]
+821.7499999999987
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Cleanup until 13:42
+
+[WALK] <table> (114) [43]
+822.1249999999987
+## Cleanup until 13:42
+
+[FIND] <tea> (1196) [44]
+822.4999999999987
+## Cleanup until 13:42
+
+[GRAB] <tea> (1196) [45]
+822.8749999999987
+[WALK] <cupboard> (117) [46]
+823.2499999999987
+[PUTIN] <tea> (1196) <cupboard> (117) [47]
+823.6249999999987
+<<Graph Changes>>
+   - tea ON table
+   + tea INSIDE cupboard
+
+823.6249999999987: tea moved
+823.6249999999987: tea moved_under_sensor
+## Cleanup until 13:44
+
+[CLOSE] <cupboard> (117) [48]
+823.9999999999987
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Cleanup until 13:44
+
+[WALK] <cupboard> (117) [49]
+824.5714285714273
+## Cleanup until 13:45
+
+[OPEN] <cupboard> (117) [50]
+825.1428571428559
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Cleanup until 13:45
+
+[WALK] <sink> (120) [51]
+825.7142857142844
+## Cleanup until 13:46
+
+[GRAB] <cup> (1058) [52]
+826.285714285713
+[WALK] <cupboard> (117) [53]
+826.8571428571415
+[PUTIN] <cup> (1058) <cupboard> (117) [54]
+827.4285714285701
+<<Graph Changes>>
+   - cup ON sink
+   + cup INSIDE cupboard
+
+827.4285714285701: cup moved
+827.4285714285701: cup moved_under_sensor
+## Cleanup until 13:47
+
+[CLOSE] <cupboard> (117) [55]
+827.9999999999986
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Cleanup until 13:48
+
+[WALK] <table> (114) [56]
+828.3749999999986
+## Return games until 13:48
+
+[FIND] <chessboard> (1034) [57]
+828.7499999999986
+## Return games until 13:49
+
+[GRAB] <chessboard> (1034) [58]
+829.1249999999986
+[FIND] <deck_of_cards> (1060) [59]
+829.4999999999986
+[GRAB] <deck_of_cards> (1060) [60]
+829.8749999999986
+[WALK] <bookshelf> (124) [61]
+830.2499999999986
+[PUTBACK] <chessboard> (1034) <bookshelf> (124) [62]
+830.6249999999986
+[PUTBACK] <deck_of_cards> (1060) <bookshelf> (124) [63]
+830.9999999999986
+<<Graph Changes>>
+   - deck_of_cards ON table
+   - chessboard ON table
+   + deck_of_cards ON bookshelf
+   + chessboard ON bookshelf
+
+830.9999999999986: deck_of_cards,chessboard moved
+## Return games until 13:51
+
+
+### showering-10.txt
+<<Activity Change>>
+## Idle until 15:11
+
+[FIND] <shower> (16) [1]
+914.333333333332
+## Take Shower until 15:14
+
+[WALK] <shower> (16) [2]
+917.6666666666654
+## Take Shower until 15:18
+
+[FIND] <shampoo> (1183) [3]
+920.9999999999987
+## Take Shower until 15:21
+
+[FIND] <towel_rack> (1206) [4]
+921.1666666666654
+## Take Shower until 15:21
+
+[WALK] <towel_rack> (1206) [5]
+921.333333333332
+## Take Shower until 15:21
+
+[FIND] <towel> (1205) [6]
+921.4999999999986
+## Take Shower until 15:21
+
+[GRAB] <towel> (1205) [7]
+921.6666666666653
+[FIND] <bathroom_counter> (18) [8]
+921.8333333333319
+[PUTBACK] <towel> (1205) <bathroom_counter> (18) [9]
+921.9999999999985
+## Take Shower until 15:22
+
+[WALK] <bedroom> (162) [10]
+921.9999999999985
+## Dry hair until 15:22
+
+[WALK] <bathroom> (1) [11]
+921.9999999999985
+## Dry hair until 15:22
+
+[FIND] <bathroom_counter> (18) [12]
+921.9999999999985
+## Dry hair until 15:22
+
+[WALK] <bathroom_counter> (18) [13]
+921.9999999999985
+## Dry hair until 15:22
+
+[FIND] <bathroom_cabinet> (17) [14]
+922.4166666666652
+## Dry hair until 15:22
+
+[OPEN] <bathroom_cabinet> (17) [15]
+922.8333333333318
+<<Graph Changes>>
+   (s)17bathroom_cabinet['CLOSED']->['OPEN']
+
+## Dry hair until 15:23
+
+[FIND] <hairdryer> (1122) [16]
+923.2499999999984
+## Dry hair until 15:23
+
+[GRAB] <hairdryer> (1122) [17]
+923.666666666665
+[SWITCHON] <hairdryer> (1122) [18]
+924.0833333333317
+[SWITCHOFF] <hairdryer> (1122) [19]
+924.4999999999983
+[FIND] <hairbrush> (1121) [20]
+924.9166666666649
+[GRAB] <hairbrush> (1121) [21]
+925.3333333333316
+[PUTBACK] <hairdryer> (1122) <bathroom_counter> (18) [22]
+925.7499999999982
+[PUTBACK] <hairbrush> (1121) <bathroom_counter> (18) [23]
+926.1666666666648
+<<Graph Changes>>
+   - hairdryer INSIDE bathroom_cabinet
+   - hairbrush INSIDE bathroom_cabinet
+   + hairdryer ON bathroom_counter
+   + hairbrush ON bathroom_counter
+
+926.1666666666648: hairdryer,hairbrush moved
+926.1666666666648: hairdryer,hairbrush moved_under_sensor
+## Dry hair until 15:26
+
+[FIND] <bathroom_cabinet> (17) [24]
+926.5833333333314
+## Dry hair until 15:27
+
+[CLOSE] <bathroom_cabinet> (17) [25]
+926.9999999999981
+<<Graph Changes>>
+   (s)17bathroom_cabinet['OPEN']->['CLOSED']
+
+## Dry hair until 15:27
+
+[FIND] <bathroom_cabinet> (17) [26]
+927.1999999999981
+## Dry hair until 15:27
+
+[OPEN] <bathroom_cabinet> (17) [27]
+927.3999999999982
+<<Graph Changes>>
+   (s)17bathroom_cabinet['CLOSED']->['OPEN']
+
+## Dry hair until 15:27
+
+[FIND] <hairdryer> (1122) [28]
+927.5999999999982
+## Dry hair until 15:28
+
+[GRAB] <hairdryer> (1122) [29]
+927.7999999999982
+[FIND] <hairbrush> (1121) [30]
+927.9999999999983
+[GRAB] <hairbrush> (1121) [31]
+928.1999999999983
+[PUTIN] <hairdryer> (1122) <bathroom_cabinet> (17) [32]
+928.3999999999984
+[PUTIN] <hairbrush> (1121) <bathroom_cabinet> (17) [33]
+928.5999999999984
+<<Graph Changes>>
+   - hairdryer ON bathroom_counter
+   - hairbrush ON bathroom_counter
+   + hairdryer INSIDE bathroom_cabinet
+   + hairbrush INSIDE bathroom_cabinet
+
+928.5999999999984: hairdryer,hairbrush moved
+928.5999999999984: hairdryer,hairbrush moved_under_sensor
+## Dry hair until 15:29
+
+[FIND] <bathroom_cabinet> (17) [34]
+928.7999999999985
+## Dry hair until 15:29
+
+[CLOSE] <bathroom_cabinet> (17) [35]
+928.9999999999985
+<<Graph Changes>>
+   (s)17bathroom_cabinet['OPEN']->['CLOSED']
+
+## Dry hair until 15:29
+
+
+### watching_tv-08.txt
+<<Activity Change>>
+## Idle until 15:39
+
+[WALK] <home_office> (241) [1]
+939.9999999999985
+## Sit to watch TV until 15:40
+
+[WALK] <blanket> (1018) [2]
+941.9999999999985
+## Sit to watch TV until 15:42
+
+[FIND] <blanket> (1018) [3]
+943.9999999999985
+## Sit to watch TV until 15:44
+
+[GRAB] <blanket> (1018) [4]
+945.9999999999985
+[WALK] <sofa> (269) [5]
+947.9999999999985
+[PUTBACK] <blanket> (1018) <sofa> (269) [6]
+949.9999999999985
+## Sit to watch TV until 15:50
+
+[WALK] <remote_control> (1176) [7]
+950.1999999999986
+## Sit to watch TV until 15:50
+
+[FIND] <remote_control> (1176) [8]
+950.3999999999986
+## Sit to watch TV until 15:50
+
+[GRAB] <remote_control> (1176) [9]
+950.5999999999987
+[FIND] <sofa> (269) [10]
+950.7999999999987
+[PUTBACK] <remote_control> (1176) <sofa> (269) [11]
+950.9999999999987
+<<Graph Changes>>
+   - remote_control ON tvstand
+   + remote_control ON sofa
+
+950.9999999999987: remote_control moved
+## Sit to watch TV until 15:51
+
+[WALK] <sofa> (269) [12]
+965.9999999999987
+## Watch TV until 16:06
+
+[SIT] <sofa> (269) [13]
+980.9999999999987
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Watch TV until 16:21
+
+[STANDUP] [14]
+995.9999999999987
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Watch TV until 16:36
+
+[FIND] <remote_control> (1176) [15]
+996.2499999999987
+## Putaway TV remote until 16:36
+
+[GRAB] <remote_control> (1176) [16]
+996.4999999999987
+[FIND] <tvstand> (273) [17]
+996.7499999999987
+[PUTBACK] <remote_control> (1176) <tvstand> (273) [18]
+996.9999999999987
+<<Graph Changes>>
+   - remote_control ON sofa
+   + remote_control ON tvstand
+
+996.9999999999987: remote_control moved
+## Putaway TV remote until 16:37
+
+[WALK] <home_office> (241) [19]
+998.9999999999987
+## Putaway TV remote until 16:39
+
+
+### dinner-04b.txt
+<<Activity Change>>
+## Idle until 18:09
+
+[WALK] <dining_room> (41) [1]
+1089.333333333332
+## Prepare Dinner Ingredients until 18:09
+
+[FIND] <cupboard> (117) [2]
+1089.6666666666652
+## Prepare Dinner Ingredients until 18:10
+
+[OPEN] <cupboard> (117) [3]
+1089.9999999999984
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Prepare Dinner Ingredients until 18:10
+
+[FIND] <plate> (1167) [4]
+1090.1764705882338
+## Prepare Dinner Ingredients until 18:10
+
+[FIND] <cupboard> (117) [5]
+1090.3529411764691
+## Prepare Dinner Ingredients until 18:10
+
+[GRAB] <plate> (1167) [6]
+1090.5294117647045
+[FIND] <kitchen_counter> (119) [7]
+1090.7058823529399
+[PUTBACK] <plate> (1167) <kitchen_counter> (119) [8]
+1090.8823529411752
+<<Graph Changes>>
+   - plate INSIDE cupboard
+   + plate ON kitchen_counter
+
+1090.8823529411752: plate moved
+1090.8823529411752: plate moved_under_sensor
+## Prepare Dinner Ingredients until 18:11
+
+[FIND] <oil> (1156) [9]
+1091.0588235294106
+## Prepare Dinner Ingredients until 18:11
+
+[GRAB] <oil> (1156) [10]
+1091.235294117646
+[FIND] <kitchen_counter> (119) [11]
+1091.4117647058813
+[PUTBACK] <oil> (1156) <kitchen_counter> (119) [12]
+1091.5882352941167
+<<Graph Changes>>
+   - oil INSIDE cupboard
+   + oil ON kitchen_counter
+
+1091.5882352941167: oil moved
+1091.5882352941167: oil moved_under_sensor
+## Prepare Dinner Ingredients until 18:12
+
+[FIND] <cookingpot> (1056) [13]
+1091.764705882352
+## Prepare Dinner Ingredients until 18:12
+
+[GRAB] <cookingpot> (1056) [14]
+1091.9411764705874
+[FIND] <stove> (1002) [15]
+1092.1176470588227
+[PUTBACK] <cookingpot> (1056) <stove> (1002) [16]
+1092.294117647058
+<<Graph Changes>>
+   - cookingpot INSIDE cupboard
+   + cookingpot ON stove
+
+1092.294117647058: cookingpot moved
+1092.294117647058: cookingpot moved_under_sensor
+## Prepare Dinner Ingredients until 18:12
+
+[FIND] <fryingpan> (1117) [17]
+1092.4705882352935
+## Prepare Dinner Ingredients until 18:12
+
+[GRAB] <fryingpan> (1117) [18]
+1092.6470588235288
+[FIND] <stove> (1002) [19]
+1092.8235294117642
+[PUTBACK] <fryingpan> (1117) <stove> (1002) [20]
+1092.9999999999995
+<<Graph Changes>>
+   - fryingpan INSIDE cupboard
+   + fryingpan ON stove
+
+1092.9999999999995: fryingpan moved
+1092.9999999999995: fryingpan moved_under_sensor
+## Prepare Dinner Ingredients until 18:13
+
+[FIND] <stove> (1002) [21]
+1093.3749999999995
+## Heat up pans until 18:13
+
+[SWITCHON] <stove> (1002) [22]
+1093.7499999999995
+<<Graph Changes>>
+   (s)1002stove['OFF', 'CLOSED']->['ON', 'CLOSED']
+
+## Heat up pans until 18:14
+
+[FIND] <oil> (1156) [23]
+1094.1249999999995
+## Heat up pans until 18:14
+
+[GRAB] <oil> (1156) [24]
+1094.4999999999995
+[FIND] <fryingpan> (1117) [25]
+1094.8749999999995
+[POUR] <oil> (1156) <fryingpan> (1117) [26]
+1095.2499999999995
+[FIND] <kitchen_counter> (119) [27]
+1095.6249999999995
+[PUTBACK] <oil> (1156) <kitchen_counter> (119) [28]
+1095.9999999999995
+## Heat up pans until 18:16
+
+[FIND] <dry_pasta> (1070) [29]
+1096.3333333333328
+## Heat up pans until 18:16
+
+[GRAB] <dry_pasta> (1070) [30]
+1096.666666666666
+[FIND] <cookingpot> (1056) [31]
+1096.9999999999993
+[POUR] <dry_pasta> (1070) <cookingpot> (1056) [32]
+1097.3333333333326
+[FIND] <kitchen_counter> (119) [33]
+1097.6666666666658
+[PUTBACK] <dry_pasta> (1070) <kitchen_counter> (119) [34]
+1097.999999999999
+<<Graph Changes>>
+   - dry_pasta INSIDE cupboard
+   + dry_pasta ON kitchen_counter
+
+1097.999999999999: dry_pasta moved
+1097.999999999999: dry_pasta moved_under_sensor
+## Heat up pans until 18:18
+
+[FIND] <cupboard> (117) [35]
+1098.3333333333323
+## Heat up pans until 18:18
+
+[CLOSE] <cupboard> (117) [36]
+1098.6666666666656
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Heat up pans until 18:19
+
+[FIND] <fridge> (1006) [37]
+1098.9999999999989
+## Heat up pans until 18:19
+
+[OPEN] <fridge> (1006) [38]
+1099.3333333333321
+<<Graph Changes>>
+   (s)1006fridge['CLOSED', 'OFF', 'CLEAN']->['OPEN', 'OFF', 'CLEAN']
+
+## Heat up pans until 18:19
+
+[FIND] <food_chicken> (1089) [39]
+1099.6666666666654
+## Heat up pans until 18:20
+
+[GRAB] <food_chicken> (1089) [40]
+1099.9999999999986
+[FIND] <fridge> (1006) [41]
+1100.333333333332
+[CLOSE] <fridge> (1006) [42]
+1100.6666666666652
+[FIND] <fryingpan> (1117) [43]
+1100.9999999999984
+[POUR] <food_chicken> (1089) <fryingpan> (1117) [44]
+1101.3333333333317
+[FIND] <kitchen_counter> (119) [45]
+1101.666666666665
+[PUTBACK] <food_chicken> (1089) <kitchen_counter> (119) [46]
+1101.9999999999982
+<<Graph Changes>>
+   (s)1006fridge['OPEN', 'OFF', 'CLEAN']->['CLOSED', 'OFF', 'CLEAN']
+   - food_chicken INSIDE fridge
+   + food_chicken ON kitchen_counter
+
+1101.9999999999982: food_chicken moved
+1101.9999999999982: food_chicken moved_under_sensor
+## Heat up pans until 18:22
+
+[FIND] <cupboard> (117) [47]
+1104.1428571428553
+## Cook Dinner until 18:24
+
+[OPEN] <cupboard> (117) [48]
+1106.2857142857124
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Cook Dinner until 18:26
+
+[FIND] <spoon> (1193) [49]
+1108.4285714285695
+## Cook Dinner until 18:28
+
+[GRAB] <spoon> (1193) [50]
+1110.5714285714266
+[CLOSE] <cupboard> (117) [51]
+1112.7142857142837
+[FIND] <cookingpot> (1056) [52]
+1114.8571428571408
+[PUTBACK] <spoon> (1193) <cookingpot> (1056) [53]
+1116.999999999998
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+   - spoon INSIDE cupboard
+   + spoon ON cookingpot
+
+1116.999999999998: spoon moved
+1116.999999999998: spoon moved_under_sensor
+## Cook Dinner until 18:37
+
+[FIND] <dry_pasta> (1070) [54]
+1117.076923076921
+## Cook Dinner until 18:37
+
+[GRAB] <dry_pasta> (1070) [55]
+1117.1538461538441
+[FIND] <cupboard> (117) [56]
+1117.2307692307672
+[OPEN] <cupboard> (117) [57]
+1117.3076923076903
+[PUTBACK] <dry_pasta> (1070) <cupboard> (117) [58]
+1117.3846153846134
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+   - dry_pasta ON kitchen_counter
+   + dry_pasta ON cupboard
+
+1117.3846153846134: dry_pasta moved
+1117.3846153846134: dry_pasta moved_under_sensor
+## Cook Dinner until 18:37
+
+[FIND] <cupboard> (117) [59]
+1117.4615384615365
+## Cook Dinner until 18:37
+
+[CLOSE] <cupboard> (117) [60]
+1117.5384615384596
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Cook Dinner until 18:38
+
+[FIND] <food_chicken> (1089) [61]
+1117.6153846153827
+## Cook Dinner until 18:38
+
+[GRAB] <food_chicken> (1089) [62]
+1117.6923076923058
+[FIND] <fridge> (1006) [63]
+1117.769230769229
+[OPEN] <fridge> (1006) [64]
+1117.846153846152
+[PUTBACK] <food_chicken> (1089) <fridge> (1006) [65]
+1117.923076923075
+<<Graph Changes>>
+   (s)1006fridge['CLOSED', 'OFF', 'CLEAN']->['OPEN', 'OFF', 'CLEAN']
+   - food_chicken ON kitchen_counter
+   + food_chicken ON fridge
+
+1117.923076923075: food_chicken moved
+1117.923076923075: food_chicken moved_under_sensor
+## Cook Dinner until 18:38
+
+[CLOSE] <fridge> (1006) [66]
+1117.9999999999982
+<<Graph Changes>>
+   (s)1006fridge['OPEN', 'OFF', 'CLEAN']->['CLOSED', 'OFF', 'CLEAN']
+
+## Cook Dinner until 18:38
+
+[FIND] <cookingpot> (1056) [67]
+1118.1249999999982
+## Set Dinner Table until 18:38
+
+[GRAB] <cookingpot> (1056) [68]
+1118.2499999999982
+[FIND] <table> (114) [69]
+1118.3749999999982
+[PUTBACK] <cookingpot> (1056) <table> (114) [70]
+1118.4999999999982
+<<Graph Changes>>
+   - cookingpot ON stove
+   + cookingpot ON table
+
+1118.4999999999982: cookingpot moved
+1118.4999999999982: cookingpot moved_under_sensor
+## Set Dinner Table until 18:38
+
+[FIND] <fryingpan> (1117) [71]
+1118.6249999999982
+## Set Dinner Table until 18:39
+
+[GRAB] <fryingpan> (1117) [72]
+1118.7499999999982
+[FIND] <table> (114) [73]
+1118.8749999999982
+[PUTBACK] <fryingpan> (1117) <table> (114) [74]
+1118.9999999999982
+<<Graph Changes>>
+   - fryingpan ON stove
+   + fryingpan ON table
+
+1118.9999999999982: fryingpan moved
+1118.9999999999982: fryingpan moved_under_sensor
+## Set Dinner Table until 18:39
+
+[FIND] <cupboard> (117) [75]
+1119.1249999999982
+## Set Dinner Table until 18:39
+
+[OPEN] <cupboard> (117) [76]
+1119.2499999999982
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Set Dinner Table until 18:39
+
+[FIND] <plate> (1167) [77]
+1119.3749999999982
+## Set Dinner Table until 18:39
+
+[GRAB] <plate> (1167) [78]
+1119.4999999999982
+[FIND] <table> (114) [79]
+1119.6249999999982
+[PUTBACK] <plate> (1167) <table> (114) [80]
+1119.7499999999982
+<<Graph Changes>>
+   - plate ON kitchen_counter
+   + plate ON table
+
+1119.7499999999982: plate moved
+## Set Dinner Table until 18:40
+
+[FIND] <spoon> (1193) [81]
+1119.8749999999982
+## Set Dinner Table until 18:40
+
+[GRAB] <spoon> (1193) [82]
+1119.9999999999982
+[FIND] <table> (114) [83]
+1120.1249999999982
+[PUTBACK] <spoon> (1193) <table> (114) [84]
+1120.2499999999982
+<<Graph Changes>>
+   - spoon ON cookingpot
+   + spoon ON table
+
+1120.2499999999982: spoon moved
+## Set Dinner Table until 18:40
+
+[FIND] <fork> (1116) [85]
+1120.3749999999982
+## Set Dinner Table until 18:40
+
+[GRAB] <fork> (1116) [86]
+1120.4999999999982
+[FIND] <table> (114) [87]
+1120.6249999999982
+[PUTBACK] <fork> (1116) <table> (114) [88]
+1120.7499999999982
+<<Graph Changes>>
+   - fork INSIDE cupboard
+   + fork ON table
+
+1120.7499999999982: fork moved
+1120.7499999999982: fork moved_under_sensor
+## Set Dinner Table until 18:41
+
+[FIND] <cupboard> (117) [89]
+1120.8749999999982
+## Set Dinner Table until 18:41
+
+[CLOSE] <cupboard> (117) [90]
+1120.9999999999982
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Set Dinner Table until 18:41
+
+[WALK] <table> (114) [91]
+1126.9999999999982
+## Eat dinner until 18:47
+
+[FIND] <spoon> (1193) [92]
+1127.2999999999981
+## Cleanup table until 18:47
+
+[GRAB] <spoon> (1193) [93]
+1127.599999999998
+[FIND] <sink> (120) [94]
+1127.899999999998
+[PUTBACK] <spoon> (1193) <sink> (120) [95]
+1128.199999999998
+<<Graph Changes>>
+   - spoon ON table
+   + spoon ON sink
+
+1128.199999999998: spoon moved
+## Cleanup table until 18:48
+
+[FIND] <fork> (1116) [96]
+1128.499999999998
+## Cleanup table until 18:48
+
+[GRAB] <fork> (1116) [97]
+1128.799999999998
+[FIND] <sink> (120) [98]
+1129.0999999999979
+[PUTBACK] <fork> (1116) <sink> (120) [99]
+1129.3999999999978
+<<Graph Changes>>
+   - fork ON table
+   + fork ON sink
+
+1129.3999999999978: fork moved
+## Cleanup table until 18:49
+
+[FIND] <plate> (1167) [100]
+1129.6999999999978
+## Cleanup table until 18:50
+
+[GRAB] <plate> (1167) [101]
+1129.9999999999977
+[FIND] <sink> (120) [102]
+1130.2999999999977
+[PUTBACK] <plate> (1167) <sink> (120) [103]
+1130.5999999999976
+<<Graph Changes>>
+   - plate ON table
+   + plate ON sink
+
+1130.5999999999976: plate moved
+## Cleanup table until 18:51
+
+[FIND] <cookingpot> (1056) [104]
+1130.8999999999976
+## Cleanup table until 18:51
+
+[GRAB] <cookingpot> (1056) [105]
+1131.1999999999975
+[FIND] <sink> (120) [106]
+1131.4999999999975
+[PUTBACK] <cookingpot> (1056) <sink> (120) [107]
+1131.7999999999975
+<<Graph Changes>>
+   - cookingpot ON table
+   + cookingpot ON sink
+
+1131.7999999999975: cookingpot moved
+## Cleanup table until 18:52
+
+[FIND] <fryingpan> (1117) [108]
+1132.0999999999974
+## Cleanup table until 18:52
+
+[GRAB] <fryingpan> (1117) [109]
+1132.3999999999974
+[FIND] <sink> (120) [110]
+1132.6999999999973
+[PUTBACK] <fryingpan> (1117) <sink> (120) [111]
+1132.9999999999973
+<<Graph Changes>>
+   - fryingpan ON table
+   + fryingpan ON sink
+
+1132.9999999999973: fryingpan moved
+## Cleanup table until 18:53
+
+
+### wash_dishes_dinner-04b.txt
+<<Activity Change>>
+## Idle until 19:03
+
+[FIND] <spoon> (1193) [1]
+1143.7499999999973
+## Wash Dishes until 19:04
+
+[GRAB] <spoon> (1193) [2]
+1144.4999999999973
+[FIND] <sink> (120) [3]
+1145.2499999999973
+[RINSE] <plate> (1167) [4]
+1145.9999999999973
+[RINSE] <spoon> (1193) [5]
+1146.7499999999973
+[RINSE] <cookingpot> (1056) [6]
+1147.4999999999973
+[RINSE] <fryingpan> (1117) [7]
+1148.2499999999973
+[PUTBACK] <spoon> (1193) <sink> (120) [8]
+1148.9999999999973
+## Wash Dishes until 19:09
+
+[WALK] <dining_room> (41) [9]
+1150.777777777775
+## Wash Dishes until 19:11
+
+[FIND] <kitchen_cabinet> (1004) [10]
+1152.555555555553
+## Wash Dishes until 19:13
+
+[OPEN] <kitchen_cabinet> (1004) [11]
+1154.3333333333308
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+
+## Wash Dishes until 19:14
+
+[FIND] <cloth_napkin> (1037) [12]
+1156.1111111111086
+## Wash Dishes until 19:16
+
+[GRAB] <cloth_napkin> (1037) [13]
+1157.8888888888864
+[FIND] <plate> (1167) [14]
+1159.6666666666642
+[WIPE] <plate> (1167) [15]
+1161.444444444442
+[FIND] <spoon> (1193) [16]
+1163.22222222222
+[WIPE] <spoon> (1193) [17]
+1164.9999999999977
+[FIND] <cookingpot> (1056) [18]
+1167.428571428569
+[WIPE] <cookingpot> (1056) [19]
+1169.8571428571404
+[FIND] <fryingpan> (1117) [20]
+1172.2857142857117
+[WIPE] <fryingpan> (1117) [21]
+1174.714285714283
+[FIND] <kitchen_cabinet> (1004) [22]
+1177.1428571428544
+[PUTIN] <cloth_napkin> (1037) <kitchen_cabinet> (1004) [23]
+1179.5714285714257
+## Wash Dishes until 19:40
+
+[CLOSE] <kitchen_cabinet> (1004) [24]
+1181.999999999997
+<<Graph Changes>>
+   (s)1004kitchen_cabinet['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Wash Dishes until 19:42
+
+[FIND] <plate> (1167) [25]
+1183.0588235294088
+## Wash Dishes until 19:43
+
+[GRAB] <plate> (1167) [26]
+1184.1176470588205
+[FIND] <cupboard> (117) [27]
+1185.1764705882322
+[OPEN] <cupboard> (117) [28]
+1186.235294117644
+[PUTIN] <plate> (1167) <cupboard> (117) [29]
+1187.2941176470556
+<<Graph Changes>>
+   (s)117cupboard['CLOSED', 'CLEAN']->['OPEN', 'CLEAN']
+   - plate ON sink
+   + plate INSIDE cupboard
+
+1187.2941176470556: plate moved
+1187.2941176470556: plate moved_under_sensor
+## Wash Dishes until 19:47
+
+[FIND] <spoon> (1193) [30]
+1188.3529411764673
+## Wash Dishes until 19:48
+
+[GRAB] <spoon> (1193) [31]
+1189.411764705879
+[FIND] <cupboard> (117) [32]
+1190.4705882352907
+[PUTIN] <spoon> (1193) <cupboard> (117) [33]
+1191.5294117647024
+<<Graph Changes>>
+   - spoon ON sink
+   + spoon INSIDE cupboard
+
+1191.5294117647024: spoon moved
+1191.5294117647024: spoon moved_under_sensor
+## Wash Dishes until 19:52
+
+[FIND] <cookingpot> (1056) [34]
+1192.5882352941142
+## Wash Dishes until 19:53
+
+[GRAB] <cookingpot> (1056) [35]
+1193.6470588235259
+[FIND] <fryingpan> (1117) [36]
+1194.7058823529376
+[GRAB] <fryingpan> (1117) [37]
+1195.7647058823493
+[FIND] <cupboard> (117) [38]
+1196.823529411761
+[PUTIN] <cookingpot> (1056) <cupboard> (117) [39]
+1197.8823529411727
+[PUTIN] <fryingpan> (1117) <cupboard> (117) [40]
+1198.9411764705844
+<<Graph Changes>>
+   - fryingpan ON sink
+   - cookingpot ON sink
+   + cookingpot INSIDE cupboard
+   + fryingpan INSIDE cupboard
+
+1198.9411764705844: cookingpot,fryingpan moved
+1198.9411764705844: cookingpot,fryingpan moved_under_sensor
+## Wash Dishes until 19:59
+
+[CLOSE] <cupboard> (117) [41]
+1199.9999999999961
+<<Graph Changes>>
+   (s)117cupboard['OPEN', 'CLEAN']->['CLOSED', 'CLEAN']
+
+## Wash Dishes until 20:00
+
+
+### watching_tv-08.txt
+<<Activity Change>>
+## Idle until 20:10
+
+[WALK] <home_office> (241) [1]
+1210.9999999999961
+## Sit to watch TV until 20:11
+
+[WALK] <blanket> (1018) [2]
+1212.9999999999961
+## Sit to watch TV until 20:13
+
+[FIND] <blanket> (1018) [3]
+1214.9999999999961
+## Sit to watch TV until 20:15
+
+[GRAB] <blanket> (1018) [4]
+1216.9999999999961
+[WALK] <sofa> (269) [5]
+1218.9999999999961
+[PUTBACK] <blanket> (1018) <sofa> (269) [6]
+1220.9999999999961
+## Sit to watch TV until 20:21
+
+[WALK] <remote_control> (1176) [7]
+1221.1999999999962
+## Sit to watch TV until 20:21
+
+[FIND] <remote_control> (1176) [8]
+1221.3999999999962
+## Sit to watch TV until 20:21
+
+[GRAB] <remote_control> (1176) [9]
+1221.5999999999963
+[FIND] <sofa> (269) [10]
+1221.7999999999963
+[PUTBACK] <remote_control> (1176) <sofa> (269) [11]
+1221.9999999999964
+<<Graph Changes>>
+   - remote_control ON tvstand
+   + remote_control ON sofa
+
+1221.9999999999964: remote_control moved
+## Sit to watch TV until 20:22
+
+[WALK] <sofa> (269) [12]
+1236.9999999999964
+## Watch TV until 20:37
+
+[SIT] <sofa> (269) [13]
+1251.9999999999964
+<<Graph Changes>>
+   (s)240character[]->['SITTING']
+
+## Watch TV until 20:52
+
+[STANDUP] [14]
+1266.9999999999964
+<<Graph Changes>>
+   (s)240character['SITTING']->[]
+
+## Watch TV until 21:07
+
+[FIND] <remote_control> (1176) [15]
+1267.2499999999964
+## Putaway TV remote until 21:07
+
+[GRAB] <remote_control> (1176) [16]
+1267.4999999999964
+[FIND] <tvstand> (273) [17]
+1267.7499999999964
+[PUTBACK] <remote_control> (1176) <tvstand> (273) [18]
+1267.9999999999964
+<<Graph Changes>>
+   - remote_control ON sofa
+   + remote_control ON tvstand
+
+1267.9999999999964: remote_control moved
+## Putaway TV remote until 21:08
+
+[WALK] <home_office> (241) [19]
+1269.9999999999964
+## Putaway TV remote until 21:10
+
+
+### brushing_teeth-07.txt
+
+[WALK] <bathroom> (1) [1]
+1270.2499999999964
+## Brush teeth until 21:10
+
+[WALK] <toothbrush> (1204) [2]
+1270.4999999999964
+## Brush teeth until 21:10
+
+[FIND] <toothbrush> (1204) [3]
+1270.7499999999964
+## Brush teeth until 21:11
+
+[GRAB] <toothbrush> (1204) [4]
+1270.9999999999964
+[WALK] <bathroom_cabinet> (17) [5]
+1270.9999999999964
+[FIND] <bathroom_cabinet> (17) [6]
+1270.9999999999964
+[OPEN] <bathroom_cabinet> (17) [7]
+1270.9999999999964
+[FIND] <tooth_paste> (1203) [8]
+1270.9999999999964
+[GRAB] <tooth_paste> (1203) [9]
+1270.9999999999964
+[FIND] <bathroom_cabinet> (17) [10]
+1270.9999999999964
+[CLOSE] <bathroom_cabinet> (17) [11]
+1270.9999999999964
+[POUR] <tooth_paste> (1203) <toothbrush> (1204) [12]
+1270.9999999999964
+[FIND] <bathroom_counter> (18) [13]
+1270.9999999999964
+[PUTBACK] <tooth_paste> (1203) <bathroom_counter> (18) [14]
+1270.9999999999964
+[WALK] <faucet> (20) [15]
+1271.4999999999964
+[SWITCHON] <faucet> (20) [16]
+1271.9999999999964
+[RINSE] <toothbrush> (1204) [17]
+1272.4999999999964
+[SWITCHOFF] <faucet> (20) [18]
+1272.9999999999964
+[WASH] <toothbrush> (1204) [19]
+1272.9999999999964
+[WALK] <toothbrush_holder> (1012) [20]
+1272.9999999999964
+[FIND] <toothbrush_holder> (1012) [21]
+1272.9999999999964
+[PUTBACK] <toothbrush> (1204) <toothbrush_holder> (1012) [22]
+1272.9999999999964
+<<Graph Changes>>
+   - tooth_paste INSIDE bathroom_cabinet
+   + tooth_paste ON bathroom_counter
+
+1272.9999999999964: tooth_paste moved
+1272.9999999999964: tooth_paste moved_under_sensor
+## Brush teeth until 21:13
+
+[FIND] <tooth_paste> (1203) [23]
+1272.9999999999964
+## Brush teeth until 21:13
+
+[GRAB] <tooth_paste> (1203) [24]
+1272.9999999999964
+[FIND] <bathroom_cabinet> (17) [25]
+1272.9999999999964
+[OPEN] <bathroom_cabinet> (17) [26]
+1272.9999999999964
+[PUTIN] <tooth_paste> (1203) <bathroom_cabinet> (17) [27]
+1272.9999999999964
+<<Graph Changes>>
+   (s)17bathroom_cabinet['CLOSED']->['OPEN']
+   - tooth_paste ON bathroom_counter
+   + tooth_paste INSIDE bathroom_cabinet
+
+1272.9999999999964: tooth_paste moved
+1272.9999999999964: tooth_paste moved_under_sensor
+## Brush teeth until 21:13
+
+[CLOSE] <bathroom_cabinet> (17) [28]
+1272.9999999999964
+<<Graph Changes>>
+   (s)17bathroom_cabinet['OPEN']->['CLOSED']
+
+## Brush teeth until 21:13
+
+
+### sleep-00.txt
+<<Activity Change>>
+## Idle until 23:03
+
+[WALK] <bedroom> (162) [1]
+1622.9999999999964
+## Sleeping until 1day - 03:03
